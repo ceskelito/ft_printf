@@ -12,7 +12,6 @@
 
 #ifndef PRINTF_H
 # define PRINTF_H
-# include "libft/libft.h"
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -35,4 +34,7 @@ int		ft_putptr(unsigned long int n, int count);
 int		count_digit_base(long int nbr, int base_size);
 void	ft_putunbr(unsigned int un);
 void	ft_putnbr_hex(unsigned int nbr, const char hex_case);
+
+// LIBFT
+void	ft_putnbr_fd(int n, int fd);
 #endif
